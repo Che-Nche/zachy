@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Eat</title>
+</head>
+<body>
+    <div>
+        <img src="eatpics/Picture1.jpg" alt="finance" width="100%">
+        <img src="eatpics/Picture2.jpg" alt="finance" width="100%">
+        <img src="eatpics/Picture3.jpg" alt="finance" width="100%">
+        <h1>MARKETING PROJECT</h1>
+        <p>
+            This project is actually modified from an iFood job interview case study given by the Brazilian equivalent
+             of JUST EAT, iFood. The data is 98% real, but slightly modified for educational purposes. Food delivery 
+             companies are constantly carrying out campaigns because the market is very competitive and innovative. 
+             Just Eat has witnessed a drop in sales in the recent time. I was asked to analyse their data and look for 
+             insights management can use to gain customers, build trust and establish credibility. How can this be 
+             achieved? I formulated some questions which shall be answered in the course of the project.<br><br>
+             It is a two years (2014-2016) data and is presented in the form of an excel spreadsheet and made up of 
+             2206 columns and 36 rows. I had to spend some time go over the data to make sure it was well understood 
+             and that there were no duplicates, spelling errors, missing entries etc. Data cleaning is the bases to obtain 
+             a good insight.<br><br>
+             The main goal of this project was to look for business opportunities and insights and to propose any data 
+             driven actions to optimise the outcomes of the campaigns.<br>
+             But in order to arrive at the recommendations, I had to answer some specific questions that will guide me 
+             in arriving to the conclusion of the project.<br><br>
+             <ul style="list-style-type:square;">
+                <li>How has purchased been following a marketing campaign? </li>
+                <li>How much did the top person spend?</li>
+                <li>How many customers were there (still for campaign 6)?</li>
+                <li>How old is the oldest customer? </li>
+                <li>What is the average amount spent by each customer in this segment? (average) </li>
+                <li>What's the total amount spent by customers (sum of the "MntTotal" column)?  </li>
+                <li>Who is the most recently acquired customer? </li>
+            </ul>
+        </p>
+        <p>
+            <h3>Analysis and Explanations</h3>
+            The data was analysed using Excel to provide the necessary insights and to propose recommendations based on 
+            the findings. I started by creating a new column at the left-hand side “Customer ID” and set it in numerical 
+            order starting from 1. Businesses needs to understand their customers and by so doing I had to plot a graph 
+            showing customer income against total amount spent. A scatter plot was best in this situation because it shows 
+            how correlated these variables are. R squared of 0.6774 indicates a positive correlation. This indicated that 
+            67.74% of customers fitted well in the regression model. This means that the richer the customer the high 
+            tendency that he or she will spend more on food. A question came to my mind as to why two points on the graph
+            didn’t follower the pattern? <br>
+            <img src="eatpics/Picture4.png" alt="finance" width="100%"> 
+            I had to focus on campaign 6 and to do that the data was filtered to get only entries for campaign 6. Summarily 
+            this campaign witnessed an exponential increase in customers of 333 as oppose to only 30 during the second 
+            campaign.<br><br>
+            <table style="width:100%">
+                <tr>
+                  <th>Sum of <br>AcceptedCmp1</th>
+                  <th>Sum of <br>AcceptedCmp2</th>
+                  <th>Sum of <br>AcceptedCmp3</th>
+                  <th>Sum of <br>AcceptedCmp4</th>
+                  <th>Sum of <br>AcceptedCmp5</th>
+                  <th>Sum of <br>AcceptedCmp6</th>
+                </tr>
+                <tr style="text-align: center;">
+                  <td>142</td>
+                  <td>30</td>
+                  <td>163</td>
+                  <td>164</td>
+                  <td>161</td>
+                  <td>333</td>                  
+                </tr>                
+              </table><br><br>
+              In the same light, I also had to know who the top customer was and the amount he spent in relation to 
+              his total income. I had to sort the amount spent by each customer in descending order to get the person
+              who spent more. <br><br>
+            <img src="eatpics/Picture6.png" alt="finance" width="100%"><br><br>
+            Based on my analysis it came out that customer with ID number 1 spent the highest of 2491 DKK on food 
+            delivery representing 2.84% of his total income <br><br> 
+        </p>
+        <p>
+            <h3>Facts findings</h3>
+            <img src="eatpics/Picture7.png" alt="finance" width="100%"><br><br>
+            <ul style="list-style-type:lower-alpha;">
+                <li>The oldest customer was 80 years and youngest 24. </li>
+                <li>An average amount spent per customer was 563</li>
+                <li>Just eat made a total income of 1,240,896 in all the campaigns.</li>
+                <li>Narrowing down to campaign 6 I noticed that this campaign contributed 307,828 
+                    and a customer spent an average of 925. 
+                </li>
+                <li>Campaign 6 contributed 24.81% of total income for the period. </li>
+                <li>The most recent customer as shown on the table was customer with the shortest life (days) which was 2159.</li>             
+            </ul>
+            In order to get a view of the breakdown of amount spent by the customers, I had to represent this using a bar chart 
+            with a bin of 250.<br><br>
+            <img src="eatpics/Picture8.png" alt="finance" width="100%"><br><br>
+            982 out of 2205 customers (44,534%) spent between 4 and 254. <br>
+            Since campaign 6 was my main area of interest, a pivot table was used to show the number of people who 
+            bought during the campaign age wise using the Formulas (IF, SUMIF, COUNTIF, texts, dates, etc.).<br>
+            =IF(AND(Z2<36,Z2>23),"24-35", <br>
+            =IF(AND(Z2<51,Z2>35),"36-50", <br>
+            =IF(AND(Z2<66,Z2>50),"51-65", <br>
+            =IF(Z2>65,"66+","?")))) <br>
+            =TEXT(AM2,"mmmm")<br><br>
+            After developing a pivot table, a bar chart was created to show how many people joined in a given month of the year.
+            <img src="eatpics/Picture9.png" alt="finance" width="100%"><br><br>
+            We can also clearly depict from the bar chart that most people joined in January followed by March and so on.               
+
+        </p>
+        <p>
+           <h3>Recommendations for further research</h3>
+           Why did the last quarter of the year record a decline in the number of customers?<br>
+           I also noticed that they were two outliers on the scatter plot. <br>
+           <h3>Thank you very much for reading and I am open for any feedback </h3>
+
+        </p>
+    </div>
+    
+</body>
+</html>
