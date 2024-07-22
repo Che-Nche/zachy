@@ -9,7 +9,7 @@
     <div>
         <p>
             <h1> HOSPITAL BED CAPACITY OPTIMIZATION (SQL DIABETIC PATIENTS ANALYSIS) </h1>         
-            <img src="hospics/Picture15.png" alt="finance" width="50%"> <br><br>
+            <img src="hospics/Picture15.png" alt="finance" width="100%"> <br><br>
             Given the abundance of free healthcare facilities in Denmark, the administration 
             is dedicated to ensuring satisfactory treatment for patients. While the hospitals 
             boast a wealth of skilled medical professionals, contemporary health challenges pose 
@@ -63,17 +63,17 @@
         </p>
         <p>
             <h3>Task 1 <br> How many days are patients spending in the hospital? </h3>
-            <img src="hospics/Picture16.png" alt="finance" width="60%"> <br>
+            <img src="hospics/Picture16.png" alt="finance" width="100%"> <br>
             Based on the query results, the majority of patients had a stay duration ranging from 1 to 4 days, with the most common duration being 3 days. 
             This information enables us to effectively plan and estimate the availability of beds at any given time.
 
         </p>
         <p>
             <h3>Task 2 <br> The new hospital director requested data revealing which medical specialties are performing the largest average number of procedures.</h3>
-            <img src="hospics/Picture17.png" alt="finance" width="60%"> <br><br>
+            <img src="hospics/Picture17.png" alt="finance" width="100%"> <br><br>
             I wrote a query to fetch all distinct medical specialties and their respective procedure counts. Additionally, I focused on obtaining information for 
             patients associated with a count exceeding 50 procedures. <br>
-            <img src="hospics/Picture18.png" alt="finance" width="60%"> <br>
+            <img src="hospics/Picture18.png" alt="finance" width="100%"> <br>
             The query results reveal that thoracic surgery has the highest average number of procedures, standing at 3.5, with a patient count of 109. On the other hand, 
             cardiology has the highest patient count, reaching 5352, but with an average procedure count of 2.7. This suggests that there isn't a direct correlation 
             between the average number of lab procedures and the patient count within these medical specialties. 
@@ -82,8 +82,8 @@
         <p>
             <h3>Task 3 <br> The Chief of Nursing officer wants to know if the hospital seems to be treating patients of different races differently, specifically with 
                 the number of lab procedures </h3>
-            <img src="hospics/Picture19.png" alt="finance" width="50%"> <br><br>
-            <img src="hospics/Picture20.png" alt="finance" width="50%"> <br>
+            <img src="hospics/Picture19.png" alt="finance" width="100%"> <br><br>
+            <img src="hospics/Picture20.png" alt="finance" width="100%"> <br>
             The number of lab procedure is not determined by race. It is noticed that the African Americans had the highest with the average lab procedure of 44.08 and 
             a minimum of 40.86 for Asians. I can also conclude that there is no significant difference in laboratory procedures based on race. This is to affirm that the 
             hospital does not seem to be treating patients of different races differently.    
@@ -92,8 +92,8 @@
             <h3> Task 4 <br> Do those who get a lot of lab procedures, stay in the hospital longer?
                 This is to get an idea of the min, avg and max procedures
             </h3>
-            <img src="hospics/Picture21.png" alt="finance" width="50%"> <br><br>
-            <img src="hospics/Picture22.png" alt="finance" width="50%"> <br>
+            <img src="hospics/Picture21.png" alt="finance" width="100%"> <br><br>
+            <img src="hospics/Picture22.png" alt="finance" width="100%"> <br>
             Based on the requirements I decided to get an overview of the lab procedures. This then guided me to group the procedures into three different headings; 
             few, average and many. The ranges were as follows; <br>
             0-24 procedures = Few <br>
@@ -101,8 +101,8 @@
             Above 54 procedures = Many <br>
             In other to arrive at the figures needed to answer the question, I used the CASE WHEN function. Here below is a query which shows the number of lab 
             procedures and the average time spent in the hospital based on each segmented group. <br>
-            <img src="hospics/Picture23.png" alt="finance" width="50%"> <br>
-            <img src="hospics/Picture24.png" alt="finance" width="50%"> <br>
+            <img src="hospics/Picture23.png" alt="finance" width="100%"> <br>
+            <img src="hospics/Picture24.png" alt="finance" width="100%"> <br>
             The observation from the query results indicates a correlation between the average time spent in the hospital and the number of procedures. It suggests 
             that individuals who spend more time in the hospital tend to undergo a greater number of lab procedures, and conversely, those with more lab procedures 
             tend to have a longer hospital stay. This correlation underscores a potential relationship between the complexity of medical cases, requiring more procedures, 
@@ -117,8 +117,8 @@
             </h3>
             In response to this request from a hospital employee, I had to pull out that information from the patient’s demographic and health database through their IDs 
             (patient number), filter to African American and “Up” with metformin. <br>
-            <img src="hospics/Picture27.png" alt="finance" width="40%"> <br>
-            <img src="hospics/Picture28.png" alt="finance" width="40%"> <br>
+            <img src="hospics/Picture27.png" alt="finance" width="100%"> <br>
+            <img src="hospics/Picture28.png" alt="finance" width="100%"> <br>
         </p>
         <p>
             <h3>Task 6 <br>
@@ -128,13 +128,13 @@
             less than the average time. Remarkably, a total of 32 patients were admitted and discharged within 1 to 4 days, showcasing a notable success for the hospital. 
             It's worth emphasizing that the average hospital stay for patients is 4.1 days. This achievement reflects the hospital's efficiency in promptly addressing and 
             resolving emergency cases, contributing to a shorter overall duration of hospitalization for these patients. <br>
-            <img src="hospics/Picture29.png" alt="finance" width="50%"> <br>
-            <img src="hospics/Picture30.png" alt="finance" width="50%"> <br>
+            <img src="hospics/Picture29.png" alt="finance" width="100%"> <br>
+            <img src="hospics/Picture30.png" alt="finance" width="100%"> <br>
             Below is a generated summary listing the top 50 medications for patients, prioritized based on the number of associated lab procedures, with the highest counts 
             positioned at the top. The summary is an outcome of employing the CONCAT function. SQL extends its functionality beyond numeric operations, allowing for the 
             conversion of arguments into text or strings. <br>
-            <img src="hospics/Picture 31.png" alt="finance" width="50%"> <br>
-            <img src="hospics/Picture32.png" alt="finance" width="50%"> <br>
+            <img src="hospics/Picture 31.png" alt="finance" width="100%"> <br>
+            <img src="hospics/Picture32.png" alt="finance" width="100%"> <br>
             <h4>Conclusion.</h4>
             Despite the successes, and guided by the insights of this study, the hospitals are diligently taking care of their patients. Given that diabetes is a chronic 
             condition, healthcare professionals can educate patients on lifestyle choices and emphasize the importance of adhering to medication regimens, thereby 
